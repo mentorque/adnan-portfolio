@@ -972,12 +972,28 @@ main,
   font-size: 0.82rem;
 }
 
+.contact-content {
+  min-width: 0;
+  overflow: hidden;
+}
+
 .contact-value {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
   gap: 0.25rem;
   margin-top: 0.2rem;
   font-family: var(--font-display);
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+.contact-value span {
+  display: block;
+}
+
+.contact-value svg {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
 }
 
 .contact-actions {

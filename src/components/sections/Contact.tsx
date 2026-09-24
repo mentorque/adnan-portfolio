@@ -53,11 +53,11 @@ const Contact = () => (
                   <div className="contact-icon" aria-hidden="true">
                     <Icon size={18} />
                   </div>
-                  <div>
+                  <div className="contact-content">
                     <p className="contact-label">{item.label}</p>
                     <p className="contact-value">
-                      {item.value}
-                      {item.external && <ArrowUpRight size={14} />}
+                      <span>{item.value}</span>
+                      {item.external && <ArrowUpRight size={14} className="shrink-0" />}
                     </p>
                   </div>
                 </>
