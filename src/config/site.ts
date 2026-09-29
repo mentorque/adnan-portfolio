@@ -8,7 +8,7 @@ export const site = {
   phone: "+353 83 849 1023",
   linkedin: "https://www.linkedin.com/in/adnaniftikhar",
   linkedinHandle: "in/adnaniftikhar",
-  portrait: "/adnan.png",
+  portrait: "/profile.jpeg",
   summary:
     "Business & Sales Operational Analyst with 3+ years of experience turning customer, operational, and commercial data into management reporting, forecasts, and actionable business insights. I use Advanced Excel, Power BI, and SQL to track performance, analyse trends, build reporting solutions, and support planning decisions across multiple stakeholder groups.",
   highlights: [
@@ -57,47 +57,58 @@ export const experiences = [
 
 export const projects = [
   {
-    title: "Multi-Store Commercial Performance & Pricing Analysis",
-    subtitle: "Eurasia Supermarket",
-    period: "Dublin, Ireland",
+    title: "Ireland Live Register Unemployment Analysis",
+    subtitle: "CSO Open Data",
+    period: "Jan 2022 – Jun 2026",
     description:
-      "Core Tools: Power BI, SQL, Salesforce, Advanced Excel",
+      "Core Tools: Excel, Power Query, Power BI, DAX, CSO PxStat",
     highlights: [
-      "Integrated sales, customer, and CRM data across 4 Dublin supermarkets, creating a consistent management view of revenue, margin, demand, and store performance.",
-      "Built recurring Power BI and Excel reporting across 20+ categories, giving management clearer visibility of KPIs, trends, risks, and business opportunities.",
-      "Analysed historical sales, customer activity, and promotional performance to support forecasting, scenario modelling, and short-term business planning.",
-      "Validated Salesforce and reporting data against source records, improving consistency and reliability of management information used by stakeholders."
+      "Analysed 12,600+ CSO Live Register records (PxStat LRM15, Jan 2022–Jun 2026) covering 26 counties, 2 age groups and both sexes. Cleaned and reshaped the raw export in Power Query and reconciled every age and sex breakdown against national totals to rule out double-counting.",
+      "Used pivot analysis, SUMIFS and monthly-average normalisation to compare trends by county, age and sex. The average monthly register fell 7.2% (175.5k to 162.8k) between 2022 and 2025, then rose 3% year-on-year in H1 2026, the first sign of the trend reversing.",
+      "Built an interactive Excel dashboard with 7 pivot tables, 3 synchronised slicers (year/month, age, sex) and dynamic KPI cards. GETPIVOTDATA, SUMIFS, RANK and INDEX/MATCH formulas recalculate year-on-year change and name the most-improved and highest-risk county for whichever year is selected.",
+      "Found diverging trends under the national figure: Under-25 claimants rose 5.5% while the 25+ group fell 8.6%, taking the youth share from 10.0% to 12.0%. Regional counties recovered fastest (Cavan -20%, Clare -17%), while Dublin stayed flat and still accounts for 28% of the register. The male share also grew, from 53.5% to 56.4%.",
+      "Found a July peak in the register every year, followed by a Sep–Nov low, which points to the end of the academic year feeding claimant numbers.",
+      "Turned the findings into points for employment service planning: focus youth activation schemes on under 25s, direct Intreo resources to Dublin, Kildare and Limerick where numbers grew in 2025, and plan caseload capacity around the July peak.",
     ],
-    tags: ["Power BI", "SQL", "Salesforce", "Excel"],
+    tags: [
+      "Excel",
+      "Power Query",
+      "Power BI",
+      "DAX",
+      "CSO PxStat",
+      "Pivot Tables",
+    ],
   },
   {
-    title: "Customer & Business Performance Analysis",
+    title: "Customer & Digital Business Platform Performance Analysis",
     subtitle: "Txend / MyStudio Pro",
-    period: "",
+    period: "Txend",
     description:
-      "Core Tools: SQL, Power BI, Python, Excel",
+      "Core Tools: Python, SQL, Power BI, Excel",
     highlights: [
-      "Consolidated customer, studio, and product-usage data from multiple business systems, creating a reliable dataset for customer and performance analysis.",
-      "Analysed registrations, active users, and engagement trends to identify changes in customer behaviour and provide clearer business insights to Product and Operations teams.",
-      "Applied SQL validation and reconciliation check to resolve duplicate, incomplete, and inconsistent records, strengthening data integrity and downstream reporting.",
-      "Defined consistent customer and product KPIs for recurring dashboards, improving comparability and confidence in management reporting."
+      "Analysed 500K+ customer and engagement records across 20+ studios using SQL cohort analysis, segmentation and trend comparisons to track registration growth, active-user behaviour and studio-level adoption.",
+      "Used the analysis to highlight studios with declining engagement and changes in customer activity, giving Product and Operations teams clearer areas to investigate during performance reviews.",
+      "Combined customer, studio and product data from multiple sources, resolving duplicate and inconsistent records before they reached KPI reports and dashboards.",
+      "Built Power BI dashboards covering 8+ customer and engagement KPIs, including registrations, active users, studio activity and usage trends, for recurring performance reviews.",
+      "Standardised KPI definitions and reporting logic so customer and product metrics were measured consistently across dashboards and stakeholder reports.",
     ],
-    tags: ["SQL", "Power BI", "Python", "Excel"],
+    tags: ["Python", "SQL", "Power BI", "Excel"],
   },
   {
-    title: "Supplier Delivery Performance & Risk Analysis",
-    subtitle: "National College of Ireland / TickPlunge",
-    period: "",
+    title: "Operational Delivery & Supplier Performance Analysis",
+    subtitle: "Txend / Delivery Operations",
+    period: "Txend",
     description:
       "Core Tools: PostgreSQL, Power BI, Python",
     highlights: [
-      "Analysed supplier, delivery, and customer-complaint data to identify delay patterns, recurring performance issues, and higher-risk operational areas.",
-      "Built Power BI reporting around 8+ performance indicators, giving stakeholders a clearer view of supplier performance, delays, and complaint trends.",
-      "Developed a predictive model in Python to identify higher-risk delivery failures, achieving 81% accuracy and supporting more proactive planning.",
-      "Translated the analysis into clear management insights, showing where performance issues were most likely to affect service delivery."
+      "Analysed 2M+ delivery, supplier and customer-complaint records across PostgreSQL and HubSpot CRM to identify delay patterns, supplier issues and recurring service failures.",
+      "Used PostgreSQL and Python to compare supplier performance, complaint frequency, delivery delays and cost behaviour, helping isolate the main drivers behind operational problems.",
+      "Built Power BI dashboards tracking 8+ operational KPIs, including on-time delivery, delay rate, supplier performance, complaint trends and cost efficiency for recurring management reviews.",
+      "Developed a predictive model with 81% accuracy to flag higher-risk suppliers and potential delivery failures, supporting earlier intervention and more proactive operational planning.",
+      "Combined delivery and complaint analysis to highlight where service issues were most likely to affect customers, giving Operations teams clearer priorities for supplier follow-up and corrective action.",
     ],
-    tags: ["PostgreSQL", "Power BI", "Python"],
-  }
+    tags: ["PostgreSQL", "Power BI", "Python", "HubSpot CRM"],
+  },
 ];
 
 export const skillCategories = [

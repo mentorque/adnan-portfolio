@@ -15,9 +15,11 @@ const Projects = () => (
         {projects.map((project, index) => (
           <SectionReveal key={project.title} delay={index * 0.1}>
             <article className="panel project-card">
-              <div className="project-top">
-                <span className="project-period">{project.period}</span>
-              </div>
+              {project.period && (
+                <div className="project-top">
+                  <span className="project-period">{project.period}</span>
+                </div>
+              )}
               <h3>{project.title}</h3>
               <p className="project-subtitle">{project.subtitle}</p>
               <p className="project-description">{project.description}</p>
